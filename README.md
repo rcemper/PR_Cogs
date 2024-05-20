@@ -247,3 +247,29 @@ Note that this only applies to serialised values.
 The core Cogs library is released under the MIT license. See the included license agreement for more details.
 
 Copyright (c) 2019 MemCog Ltd
+
+## Docker   
+After container start the classes are loaded in namespace USER     
+
+### Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+### Installation
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/rcemper/PR_Cogs.git
+```
+```
+$ docker compose up -d && docker compose logs -f
+```
+
+To open IRIS Terminal do:
+```
+$ docker-compose exec iris iris session iris 
+USER>
+```
+or using **WebTerminal**     
+http://localhost:42773/terminal/      
+
+To access IRIS System Management Portal   
+http://localhost:42773/csp/sys/UtilHome.csp    
+
